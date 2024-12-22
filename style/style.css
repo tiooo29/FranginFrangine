@@ -1,0 +1,62 @@
+/* Marges nulles par défaut*/
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(3, 140, 1);
+    color: white;
+}
+
+h1, h2 {
+    color: rgb(188, 0, 0);
+}
+
+/* Liens */
+a {
+    color: blue;
+}
+
+a:hover {
+    color: darkblue;
+    font-weight: bold;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+nav + a {
+    color: cyan;
+}
+
+header {
+    /* padding: 50px; */
+    background-image: url("../assets/banner.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+
+
+.white-paragraph {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.black-paragraph {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    background-color: black;
+    color: white;
+}
+
+footer {
+    padding: 1em 1em 1em 1em;
+    background-color: gray;
+    color: darkred;
+}
