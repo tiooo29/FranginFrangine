@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang=""fr">
+<html lang="fr">
 
 <head>
-    <meta charset="utf-8">
     <title>Charcuterie Frangin Frangine</title> <!--Vérifier que le nom est bon-->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
     <link href="style/style.css" rel="stylesheet">
+    <!-- Open Sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#equipe">Équipe</a></li>
-            <li><a href="#menu">Menu</a></li>
+    <nav class="container-navbar">
+        <ul class="navbar-list">
+            <li class="nav-item-list"><a href="#equipe" class="nav-item-link">Équipe</a></li>
+            <li class="nav-item-list"><a href="#boutique" class="nav-item-link">Notre boutique</a></li>
+            <li class="nav-item-list"><a href="#menu" class="nav-item-link">Menu</a></li>
         </ul>
     </nav>
 
@@ -25,41 +34,151 @@
 
     <main>
 
-        <!-- Lorem ispum en haut-->
-        <div id="intro" class="black-paragraph">
-            Do magna exercitation Lorem consectetur veniam ex eu nulla aute in deserunt velit culpa ullamco.
-            Duis labore sint commodo elit magna sit eu. Velit minim aute aliquip cupidatat quis ipsum in eu id.
-            Ex sint magna cillum dolor dolor consectetur tempor tempor eu ut. Lorem esse voluptate occaecat ipsum amet cupidatat.
-            Fugiat do et elit commodo.
-            Cupidatat sunt sint ad exercitation amet deserunt in eiusmod reprehenderit anim aliqua. Magna tempor voluptate occaecat ipsum ad enim aliqua.
-            Tempor nostrud tempor nostrud ad deserunt dolor pariatur magna incididunt velit minim. Excepteur reprehenderit magna incididunt ea ipsum voluptate.
-            Aliqua aute adipisicing enim enim Lorem sit exercitation dolor. Minim proident voluptate sunt eiusmod.
-            Qui occaecat qui deserunt ex irure adipisicing aliqua mollit proident ad dolor.
-            Sit aliqua excepteur ex quis anim duis occaecat magna consequat. Cupidatat laboris reprehenderit laborum quis irure.
-            Deserunt voluptate nostrud anim fugiat et cupidatat elit irure fugiat ullamco adipisicing voluptate exercitation Lorem. Laboris ad fugiat Lorem dolore.
+        <section id="equipe" class="paragraph">
+            <h2>Équipe</h2>
+            <div id="equipe" class="container-paragraph">
+                <div class="container-paragraph-image">
+                    <img src="assets/equipe.png" class="img-shadow" title="Notre équipe">
+                </div>
+                <div class="container-paragraph-texte">
+                    Installés au Koréjou à Plouguerneau, Jérôme et Sandrine vous acceuillent dans leur nouvelle boutique.
+                </div>
+            </div>  
         </section>
 
-        <div id="equipe" class="white-paragraph">
-            <h2 id="equipe">Équipe</h2>
-            Installés au Koréjou à Plouguerneau, Jérôme et Sandrine vous acceuillent dans leur nouvelle boutique.
-        </div>
+        <section id="boutique" class="paragraph">
+            <h2>Informations utiles</h2>
+            <div class="container-paragraph">
+                <div class="container-paragraph-texte">
+                    Notre boutique se trouve au Korejou à Plouguerneau.<br>
+                    Nous sommes ouverts du lundi au samedi de 8h à 17h et le dimanche de 9h à 12h.
+                </div>
+                <div class="container-paragraph-image">
+                    <img src="assets/map.png" width=500px title="Notre boutique, au coeur de Plouguerneau.">
+                </div>
+            </div>
+        </section>
 
-        <div id="menu" class="black-paragraph">
+        <section id="menu" class="paragraph">
             <h2 id="menu">Menu</h2>
-            Le menu 2025 peut-être téléchargé en cliquant sur l'image ci dessous.<br>
-            <a href="menu/menu2025.pdf"> <img src="assets/menu2025_mini.png" title="Téléchargez le menu en cliquant ici."> </a></a>
-        </div>
+
+            <div class="container-paragraph">
+                <div class="container-paragraph-image">
+                    <a href="menu/menu2025.pdf"> <img src="assets/menu2025_mini.png" title="Téléchargez le menu en cliquant ici."></a>
+                </div>
+                <div class="container-paragraph-texte">
+                    Le menu 2025 peut-être téléchargé en cliquant sur l'image.<br>
+                    Nous vous remercions de commander au moins 1 semaine à l'avance pour les groupes de plus de 20 personnes.
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" class="paragraph">
+            <h2>Contact</h2>
+            <form method=""get" action="">
+                <fieldset>
+                    Une question ? Contactez-nous directement via ce formulaire ou par téléphone au <a href="+33634567890">06 34 56 78 90</a>.<br><br>
+                    <div class="container-formulaire-1">
+                        <div class="container-formulaire-element">
+                            <label for="prenom">Prénom* : </label><input type="text" name="prenom" placeholder="Guy" required>
+                        </div>  
+                        <div class="container-formulaire-element">
+                            <label for="nom">Nom* : </label><input type="text" name="nom" placeholder="Tarsèche" required>
+                        </div>
+                        <div class="container-formulaire-element">
+                            <label for="mail">Mail* : </label><input type="email" name="mail" placeholder="mail@domaine.fr" required>
+                        </div>
+                        <div class="container-formulaire-element">
+                            <label for="numero">Numéro de téléphone</label><input type="tel" name="numero" placeholder="0600000000">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container-formulaire-2">
+                        <label for="message">Message* : </label><br>
+                        <textarea name="message" placeholder="Votre message" required></textarea>
+                    </div>
+                    <div class="container formulaire">
+                        <input type="submit" name="confirmer" value="Envoyer">
+                    </div>
+                    <p class="formulaire-legal">
+                        Les champs suivis d'une astérisque sont obligatoires.<br>
+                        Frangin-Frangine traite les données recueillies afin de satisfaire votre demande.
+                        Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, reportez-vous à nos <a href="mentions-legales.html">mentions légales</a>.
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
     </main>
 
     <footer>
-        Adresse : Korrejou, Plouguerneau<br>
-        Téléphone : <a href="tel:+33 6 34 56 78 90">06 34 56 78 90</a><br>
-        
-        <!-- Ajouter icone aux réseaux -->
-        <a href="https://facebook.com/franginfrangine" target="_blank">Facebook</a>
-        <a href="https://instagram.com/franginfrangine" target="_blank">Instagram</a>
-        <a href="mentions-legales.html">Mentions légales</a>
-    </footer>
+        <div class="container-footer">
+
+            <!-- Coorodonnées -->
+            <div class="footer-content">
+                <div class="footer-title">
+                    Coordonnées</h3>
+                </div>
+                
+                <div class="container-footer-with-icon">
+                    <div class="footer-with-icon">
+                        <img src="assets/home.png" class="contact-icon">
+                    </div>
+                    <div class="footer-with-icon">
+                        Korejou, 29880 Plouguerneau
+                    </div>
+                </div>
+                
+                <div class="container-footer-with-icon">
+                    <div class="footer-with-icon">
+                        <a href="tel:+33634567890"><img src="assets/phone.png" class="contact-icon"></a>
+                    </div>
+                    <div class="footer-with-icon">
+                        <a href="tel:+33634567890">06 34 56 78 90</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Horaires -->
+            <div class="footer-content">
+                <div class="footer-title">Horaires</div>
+                    Lundi-Samedi : 8h-17h<br>
+                    Dimanche : 9h-12h
+            </div>
+
+            <!-- Réseaux -->
+            <div class="footer-content">
+                <div class="footer-title">
+                    Réseaux
+                </div>
+
+                <div class="container-footer-with-icon">
+                    <div class="footer-with-icon">
+                        <a href="https://facebook.com"><img src="assets/facebook.png" class="contact-icon"></a>
+                    </div>
+                    <div class="footer-with-icon">
+                        <a href="https://facebook.com">Facebook</a>
+                    </div>
+                </div>
+
+                <div class="container-footer-with-icon">
+                    
+                    <div class="footer-with-icon">
+                        <a href="https://instagram.com"><img src="assets/instagram.png" class="contact-icon"></a>
+                    </div>
+                    <div class="footer-with-icon">
+                        <a href="https://instagram.com">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mentions-legales">
+            <a href="mentions-legales.html">Mentions légales</a>
+        </div>
+        </footer>
 
 </body>
 </html>
